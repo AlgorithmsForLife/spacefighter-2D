@@ -1,4 +1,16 @@
-# spacefighter-2D
+Name: spacefighter-2D
+Author: AlgorithmsForLife
 
-Space-fighter-2D is made with similarities in mind towards the game "space invaders".
-Currently it is a side-project for school.
+Information:
+____________
+Spacefighter-2D is a game inspired by the classic "Space Invaders".
+While it will take a more modern approach towards ganeplay and UI I
+will try to incorporate some twist and turns for the futher development
+of this project.
+
+Notes:
+____________
+• For now it's not uploadet jet
+• It will be uploadet whenever the first
+  version is ready.
+•
