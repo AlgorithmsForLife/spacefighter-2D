@@ -5,8 +5,8 @@ ____________
 Information:
 
 Spacefighter-2D is a game inspired by the classic "Space Invaders".
-While it will take a more modern approach towards ganeplay and UI I
-will try to incorporate some twist and turns for the futher development
+While it will take a more modern approach towards gameplay and UI I
+will try to incorporate some twist and turns for the further development
 of this project.
 
 ____________
