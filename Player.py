@@ -12,7 +12,7 @@ class Player(Vererber):
         self.health = 100
         self.rec = None
         self.health_indicator = None
-        self.tmp = pygame.image.load(os.path.abspath('Images/player0.png'))
+        self.tmp = pygame.image.load(os.path.abspath('player0.png'))
         self.sprite = pygame.transform.scale(self.tmp, (2 * self.w_rec, 2 * self.h_rec))
         self.imrect = self.sprite.get_rect()
         self.imrect.y = self.height - 4 * self.h_rec
