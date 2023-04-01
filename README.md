@@ -17,7 +17,12 @@ Notes:
 • It will need time before the next upload is ready.
 
 ____________
+Requierments:
+• Python 3.9
+• pygame
+
+____________
 Controls:
 • A/D > Left/Right movement
-• Space > shoot
+• Space > shoot• Python 3.9
 • left Mouse-Button > active_shield
