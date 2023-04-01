@@ -5,7 +5,7 @@ ____________
 Information:
 
 Spacefighter-2D is a game inspired by the classic "Space Invaders".
-While it will take a more modern approach towards gameplay and UI I
+While it will take a more modern approach towards gameplay and UI. I
 will try to incorporate some twist and turns for the further development
 of this project.
 
@@ -25,4 +25,5 @@ ____________
 Controls:
 • A/D > Left/Right movement
 • Space > shoot
-• left Mouse-Button > active_shield
+• left Mouse-Button > activate shield
+• Escape > close game
