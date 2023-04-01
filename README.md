@@ -12,7 +12,12 @@ of this project.
 ____________
 Notes:
 
-• For now it's not uploadet jet|
-• It will be uploadet whenever the first
-  version is ready.|
-•
+• For now it's uploadet.
+• The first version is ready.
+• It will need time before the next upload is ready.
+
+____________
+Controls:
+• A/D > Left/Right movement
+• Space > shoot
+• left Mouse-Button > active_shield
