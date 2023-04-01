@@ -24,5 +24,5 @@ Requierments:
 ____________
 Controls:
 • A/D > Left/Right movement
-• Space > shoot• Python 3.9
+• Space > shoot
 • left Mouse-Button > active_shield
