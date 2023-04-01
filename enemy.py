@@ -1,6 +1,7 @@
 from char_0 import Vererber
 import pygame
 import random
+import os
 
 
 # inherites from Vererber(char_0.py) + init
@@ -8,7 +9,7 @@ class Enemy(Vererber):
     def __init__(self, game, index, ebene=0):
         super().__init__(game)
         self.health = 80
-        self.tmp = pygame.image.load("enemy0.png")
+        self.tmp = pygame.image.load(os.path.abspath('Images/enemy0.png'))
         self.sprite = pygame.transform.scale(self.tmp, (2 * self.w_rec, 2 * self.h_rec))
         self.imrect = self.sprite.get_rect()
         self.imrect.y = self.height - 2 * self.h_rec

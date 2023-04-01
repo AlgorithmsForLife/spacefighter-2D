@@ -1,4 +1,5 @@
 import pygame
+import os
 from settings import *
 import Player
 import enemy
@@ -32,8 +33,8 @@ class Game:
         self.timer = pygame.time.Clock()
         self.difficulty = difficulty
         self.fps = fps
-        self.galaxy = pygame.image.load("galaxy.png")
-        self.tmp = pygame.image.load("coins.png")
+        self.galaxy = pygame.image.load(os.path.abspath("Images/galaxy.png"))
+        self.tmp = pygame.image.load(os.path.abspath("Images/coins.png"))
         self.coins_image = pygame.transform.scale(self.tmp, (40, 40))
         self.shield = Shield(self)
         self.shield_active = active

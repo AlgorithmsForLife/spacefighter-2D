@@ -1,5 +1,5 @@
 import pygame
-
+import os
 
 from settings import *
 from laser import Laser
@@ -29,7 +29,7 @@ class Vererber:
         self.current_time = 0
         self.speedreduction = speedreduction
         self.cooldown = cooldown
-        self.tmp = pygame.image.load("placeholderX.png")
+        self.tmp = pygame.image.load(os.path.abspath('Images/placeholderX.png'))
         self.sprite = pygame.transform.scale(self.tmp, (2 * self.w_rec, 2 * self.h_rec))
         self.imrect = self.sprite.get_rect()
         self.imrect.y = self.height - 4 * self.h_rec
@@ -54,9 +54,9 @@ class Vererber:
     def create_image(self, type):
         if self.create_image_checker:
             try:
-                tmp = pygame.image.load(str(type) + str(self.state) + ".png")
+                tmp = pygame.image.load(os.path.abspath("Images/" + str(type) + str(self.state) + ".png"))
             except FileNotFoundError:
-                tmp = pygame.image.load("placeholderX.png")
+                tmp = pygame.image.load(os.path.abspath("Images/placeholderX.png"))
             sprite = pygame.transform.scale(tmp, (2 * self.w_rec, 2 * self.h_rec))
             imrect = sprite.get_rect()
             imrect.y = self.imrect.y
@@ -87,3 +87,4 @@ class Vererber:
     def get_health(self):
         if self.health + self.damage <= 100:
             self.health += self.damage
+            self.bar.width += self.damage

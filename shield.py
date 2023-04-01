@@ -1,6 +1,6 @@
 import pygame
 from settings import shield_health, damage, shield_cooldown, bar_height
-
+import os
 
 class Shield:
     def __init__(self, game):
@@ -8,15 +8,16 @@ class Shield:
         self.laser_time = 0
         self.current_time = 0
         self.cooldown = shield_cooldown
-        self.tmp = pygame.image.load("shield.png")
+        self.tmp = pygame.image.load(os.path.abspath('Images/shield.png'))
         self.sprite = pygame.transform.scale(self.tmp, (100, 20))
         self.rect_sprite = self.sprite.get_rect()
-        self.circle = pygame.image.load("circle.png")
+        self.circle = pygame.image.load(os.path.abspath('Images/circle.png'))
         self.sprite_circle = self.circle.get_rect()
         self.health = shield_health
         self.damage = damage
         self.bar_height = bar_height
         self.bar = pygame.Rect(self.rect_sprite.x, self.rect_sprite.y, self.rect_sprite.width, self.bar_height)
+        self.bg_bar = pygame.Rect(self.bar.x, self.bar.y, self.bar.width, self.bar_height)
 
     def get_damage(self):
         if self.health - self.damage >= 0 and self.game.shield_active:
@@ -32,6 +33,8 @@ class Shield:
     def run(self):
         if self.health < 100:
             self.bar.x, self.bar.y = self.rect_sprite.x, self.rect_sprite.y + self.bar.height * 3
+            self.bg_bar.x, self.bg_bar.y = self.bar.x, self.bar.y
+            pygame.draw.rect(self.game.screen, "darkgrey", self.bg_bar)
             pygame.draw.rect(self.game.screen, "lightblue", self.bar)
         x, y = pygame.mouse.get_pos()
         rect = self.sprite.get_rect()
