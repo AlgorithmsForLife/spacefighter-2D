@@ -8,10 +8,10 @@ class Shield:
         self.laser_time = 0
         self.current_time = 0
         self.cooldown = shield_cooldown
-        self.tmp = pygame.image.load(os.path.abspath('Images/shield.png'))
+        self.tmp = pygame.image.load(os.path.abspath('shield.png'))
         self.sprite = pygame.transform.scale(self.tmp, (100, 20))
         self.rect_sprite = self.sprite.get_rect()
-        self.circle = pygame.image.load(os.path.abspath('Images/circle.png'))
+        self.circle = pygame.image.load(os.path.abspath('circle.png'))
         self.sprite_circle = self.circle.get_rect()
         self.health = shield_health
         self.damage = damage
