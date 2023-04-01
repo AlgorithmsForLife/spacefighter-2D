@@ -56,7 +56,7 @@ class Vererber:
             try:
                 tmp = pygame.image.load(os.path.abspath(str(type) + str(self.state) + ".png"))
             except FileNotFoundError:
-                tmp = pygame.image.load(os.path.abspath(placeholderX.png"))
+                tmp = pygame.image.load(os.path.abspath("placeholderX.png"))
             sprite = pygame.transform.scale(tmp, (2 * self.w_rec, 2 * self.h_rec))
             imrect = sprite.get_rect()
             imrect.y = self.imrect.y
